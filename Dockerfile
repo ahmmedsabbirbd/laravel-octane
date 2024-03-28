@@ -1,7 +1,7 @@
 FROM dunglas/frankenphp
 
 RUN install-php-extensions \
-    pcntl \
+    pcntl
     # Add other PHP extensions here...
 
 # Install Git
