@@ -9,7 +9,3 @@ services:
       - "443:443/udp"
     volumes:
       - .:/app/public
-    environment:
-      - HTTPS=on
-      - SSL_CERT_FILE=/path/to/your/certificate.crt
-      - SSL_KEY_FILE=/path/to/your/private_key.key
