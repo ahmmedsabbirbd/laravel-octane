@@ -18,6 +18,7 @@ WORKDIR /app
 # Copy Laravel files
 COPY artisan ./
 COPY composer.json composer.lock ./
+COPY .env.example .env
 COPY app/ ./app/
 COPY bootstrap/ ./bootstrap/
 COPY config/ ./config/
