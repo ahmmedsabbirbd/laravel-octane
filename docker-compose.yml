@@ -5,7 +5,5 @@ services:
     build: .
     ports:
       - "8000:8000"
-      - "443:443"
-      - "443:443/udp"
     volumes:
-      - ./octane-app:/app/public
+      - .:/app
