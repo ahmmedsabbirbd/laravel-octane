@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - .:/app/public
+    environment:
+      - HTTPS=on
+      - SSL_CERT_FILE=/path/to/your/certificate.crt
+      - SSL_KEY_FILE=/path/to/your/private_key.key
