@@ -8,4 +8,4 @@ services:
       - "443:443"
       - "443:443/udp"
     volumes:
-      - .:/app/public
+      - ./octane-app:/app/public
